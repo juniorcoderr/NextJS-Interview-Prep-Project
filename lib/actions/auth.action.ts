@@ -96,6 +96,8 @@ export async function signOut() {
   const cookieStore = await cookies();
 
   cookieStore.delete("session");
+
+  return { success: true, message: "Signed out successfully" };
 }
 
 // Get current user from session cookie
