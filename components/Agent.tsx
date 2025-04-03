@@ -118,6 +118,13 @@ const Agent = ({
     setCallStatus(CallStatus.CONNECTING);
 
     if (type === "generate") {
+      // Ensure the workflow ID is provided
+      if (!process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID) {
+        throw new Error(
+          "VAPI Workflow ID is missing in the environment variables."
+        );
+      }
+
       await vapi.start(process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID!, {
         variableValues: {
           username: userName,
@@ -125,6 +132,11 @@ const Agent = ({
         },
       });
     } else {
+      // Ensure the interviewer (Assistant or Squad) is provided
+      if (!interviewer) {
+        throw new Error("Interviewer (Assistant or Squad) is not defined.");
+      }
+
       let formattedQuestions = "";
       if (questions) {
         formattedQuestions = questions
