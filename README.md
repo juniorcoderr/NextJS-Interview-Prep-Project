@@ -44,6 +44,39 @@ This project is built using the **Next.js, Firebase, Tailwind CSS, and TypeScrip
 
 ---
 
+### Use of **VAPI** in This Project  
+
+VAPI (Voice API) is used in this **AI-powered real-time interview platform** to enable **voice-based interactions** between users and the AI interviewer. Here’s how it is integrated and its role in the project:  
+
+1. **Real-Time AI Voice Interviews**  
+   - The AI system conducts mock interviews where users can respond verbally.  
+   - VAPI processes and transcribes user responses in real-time.  
+
+2. **Speech Synthesis & Text-to-Speech (TTS)**  
+   - The AI interviewer doesn’t just display questions as text—it speaks them aloud.  
+   - VAPI is used to generate **lifelike AI speech**, making the interview experience more natural.  
+
+3. **Speech Recognition & Transcription**  
+   - User responses are captured via voice input.  
+   - VAPI transcribes these responses into text, which is then processed by the AI for evaluation.  
+
+4. **Seamless Integration with AI Models (Gemini AI)**  
+   - The system uses **Google’s Gemini AI** for generating interview questions and analyzing responses.  
+   - VAPI ensures smooth interaction by providing real-time voice communication.  
+
+5. **Handling Interview Workflow**  
+   - Users interact with the AI interviewer through voice, reducing reliance on typing.  
+   - VAPI helps maintain a **structured conversation flow**, handling pauses, interruptions, and clarifications.  
+
+6. **Multi-Agent Communication**  
+   - The project allows different AI agents to handle various tasks (e.g., interview generation vs. conducting interviews).  
+   - VAPI ensures the correct **voice agent** is used for the right task.  
+
+### **Conclusion**  
+VAPI is **critical** in making this interview platform **real-time, interactive, and voice-enabled**, bridging the gap between text-based AI chat and human-like conversations. 🚀
+
+---
+
 ## **🛠️ Tech Stack & Tools Used**  
 
 | Technology  | Usage |
@@ -104,6 +137,8 @@ NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
 NEXT_PUBLIC_GEMINI_AI_KEY=your-gemini-key
 NEXT_PUBLIC_VERCEL_AI_KEY=your-vercel-key
+NEXT_PUBLIC_VAPI_WEB_TOKEN=your-vapi-web-token
+NEXT_PUBLIC_VAPI_WORKFLOW_ID=your-vapi-workflow-id
 ```
 
 ### **4️⃣ Run the Development Server**  
