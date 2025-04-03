@@ -1,36 +1,148 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **Full Stack Real-Time AI Voice Agent Interview Platform** 🎙️🤖  
 
-## Getting Started
+Welcome to the **Full Stack AI-Powered Real-Time Voice Interview Platform**! This project is an **innovative AI-driven mock interview system** that helps users **enhance their technical interview skills** by conducting **simulated real-time voice-based interviews** with an AI interviewer.  
 
-First, run the development server:
+Using cutting-edge **Gemini AI**, **Vapi**, and **speech recognition APIs**, this platform provides **intelligent, context-aware, and adaptive interview experiences** that mimic real-world interview scenarios. Candidates receive **instant AI feedback**, making it an essential tool for **tech interview preparation**.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This project is built using the **Next.js, Firebase, Tailwind CSS, and TypeScript**, ensuring a **highly scalable, responsive, and real-time experience**.  
+
+---
+
+## **🚀 Key Features**  
+
+### 🎤 **AI-Powered Voice Interviews**  
+- Simulates **real-world technical interviews** with **human-like AI voice agents**.  
+- AI-generated **context-aware** responses that adapt to user answers.  
+- Supports **different interview roles** (Software Engineer, Data Scientist, etc.).  
+
+### 🗣️ **Real-Time Voice Interaction**  
+- Uses **Vapi** for **seamless voice recognition and synthesis**.  
+- Users can **speak their responses**, and AI will **listen, process, and evaluate** their answers.  
+- Built-in **natural language understanding (NLU)** for **accurate speech interpretation**.  
+
+### 🎯 **Custom Interview Generation**  
+- Users can **select job roles**, and the AI **dynamically generates** relevant questions.  
+- Difficulty levels: **Beginner, Intermediate, Advanced**.  
+- AI adapts follow-up questions based on **previous user responses**.  
+
+### 🔑 **Secure User Authentication**  
+- Firebase Authentication with **Google OAuth & Email/Password login**.  
+- Ensures **secure access** and **protects user data**.  
+
+### 📊 **Detailed Interview Feedback & Analysis**  
+- AI-generated feedback based on **speech clarity, content quality, and confidence level**.  
+- Provides **real-time scoring** and **progress tracking**.  
+- Users can **review their past interviews** and identify improvement areas.  
+
+### 🌍 **Scalable & Responsive UI**  
+- Built using **Tailwind CSS** for a **modern, responsive design**.  
+- Optimized for **desktop, tablet, and mobile devices**.  
+
+### 🌐 **Server-Side Rendering & Optimized Performance**  
+- Uses **Next.js SSR & SSG** for fast loading times.  
+- Optimized API calls for **real-time data fetching** and **low latency performance**.  
+
+---
+
+## **🛠️ Tech Stack & Tools Used**  
+
+| Technology  | Usage |
+|------------|------|
+| **Next.js (React)** | Frontend framework for a smooth user experience |
+| **TypeScript** | Type safety for reliable code |
+| **Tailwind CSS** | Modern, responsive UI styling |
+| **Firebase Authentication** | Secure user login & authorization |
+| **Firebase Firestore** | NoSQL database for user interview history |
+| **Gemini AI** | AI-powered question generation & analysis |
+| **Vapi** | Voice AI agents for developers |
+| **Vercel Hosting** | Seamless deployment for frontend & backend |
+
+---
+
+## **📂 Project Folder Structure**  
+
+```
+/ai-voice-interview-platform
+  ├── /frontend
+  │   ├── /components          # Reusable React components
+  │   ├── /pages               # Next.js pages (Home, Interview, Profile, etc.)
+  │   ├── /styles              # Tailwind CSS global styles
+  │   ├── /hooks               # Custom React hooks for AI & UI
+  │   ├── /utils               # Utility functions (API, auth, etc.)
+  │   ├── /public              # Static assets & icons
+  │   ├── next.config.js       # Next.js configuration
+  │
+  ├── /backend
+  │   ├── /api                 # API endpoints for interview processing
+  │   ├── /services            # AI question processing, database handling
+  │   ├── /firebase            # Firebase authentication & Firestore setup
+  │   ├── server.js            # Express server for API calls
+  │
+  ├── .env.local               # Environment variables (API keys, DB credentials)
+  ├── package.json             # Dependencies & scripts
+  ├── README.md                # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## **🚀 Getting Started**  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **1️⃣ Clone the Repository**  
+```bash
+git clone https://github.com/juniorcoderr/NEXTJS-Interview-Prep-Project.git
+```
 
-## Learn More
+### **2️⃣ Install Dependencies**  
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### **3️⃣ Set Up Environment Variables**  
+Create a `.env.local` file in both **frontend** and **backend** folders and add API keys:  
+```
+NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
+NEXT_PUBLIC_GEMINI_AI_KEY=your-gemini-key
+NEXT_PUBLIC_VERCEL_AI_KEY=your-vercel-key
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **4️⃣ Run the Development Server**  
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **5️⃣ Open the App**  
+Visit **`http://localhost:3000`** in your browser to start using the AI-powered interview platform. 🎙️  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## **🛠️ Roadmap & Future Enhancements**  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔹 **AI-based Emotion Analysis** – Detect **tone, hesitation, and confidence levels** in speech.  
+🔹 **Interview Role Expansion** – Add **Product Manager, Data Engineer, and more**.  
+🔹 **Automated Transcripts** – Generate **real-time AI summaries** of interviews.  
+🔹 **Video Interview Mode** – Enable **video-based AI mock interviews**.  
+🔹 **Community Feature** – Users can **share experiences & get peer feedback**.  
+
+---
+
+## **🤝 Contributing**  
+
+We ❤️ contributions!  
+
+📌 **How to contribute:**  
+1. **Fork** the repository  
+2. Create a **feature branch** (`git checkout -b feature-xyz`)  
+3. **Commit** changes (`git commit -m "Add new feature"`)  
+4. **Push** to your fork (`git push origin feature-xyz`)  
+5. Submit a **pull request** 🎉  
+
+---
+
+## **📧 Contact & Support**  
+
+💬 If you have any questions or feature requests, feel free to **open an issue** or reach out! 🚀  
+
+---
+
+This repository serves as a **perfect portfolio project** for developers aiming to **showcase full-stack AI development skills**! 🎙️🤖  
